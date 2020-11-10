@@ -1,0 +1,40 @@
+
+    <title>Demos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="scripts/mapscript.js"></script>
+  
+              <div class="grow">
+                <div class="column">
+                  <h3>Google Maps API Demo</h3>
+                  <div id="map"></div>
+                </div>
+                <div class="column">
+                  <h3>C# ASP.NET</h3>
+                  <div id="gifs-rows">
+                    <img src="https://i.imgur.com/b3kyYxb.png" alt="gif preset" class="preset-file">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/ACRIMSat_Animation.gif" alt="gif preset" class="gif-file">
+                  </div>
+                </div>
+                  <div class="column">
+                    <h3>C# ASP.NET</h3>
+                    <div id="csharp">
+                    </div>
+                  </div>
+              </div>
+              <script>
+              
+                    </script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_FRHW9JzE6L9bvUN0Kg6B0rIv8ZTAU48&callback=initMap">
+                    </script>
+<script>
+   $(document).ready(function(){
+  
+$("img", "#gifs-rows").hover(function() {
+  $('.preset-file').toggle();
+  $('.gif-file').toggle();
+});
+    
+    });
+</script> 

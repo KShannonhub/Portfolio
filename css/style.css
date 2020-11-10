@@ -1,0 +1,307 @@
+
+body,
+html {
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+.main{
+  animation: transitionIn 1s ease-in-out;
+}
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0deg);
+  }
+}
+
+header{
+  background-color:#222222;
+  color:#ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color:#ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+header ul{
+  margin: auto;
+
+}
+
+header li{
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+
+header nav{
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+
+header a:hover{
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* 
+header h3{
+  float:left; 
+  color:white;
+  font-size: .7em;
+} */
+
+
+
+.container{
+  width:80%;
+  margin: auto;
+  padding-bottom:20px;
+  overflow:hidden;
+}
+
+
+
+.dark{
+  background-color: #35424a;
+  margin:20px;
+}
+
+.dark2{
+  height: 500px;
+  margin:20px;
+}
+
+.page-title{
+  font-size: 40px;
+}
+
+.main{
+  background: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+  color:white;
+
+ 
+}
+
+.main h1 {
+  font-size:2.5em;
+  margin:5px;
+  padding:5px;
+  word-wrap: break-word;
+}
+
+/* DEMOS */
+article#main-col{
+min-height: 300px;
+}
+
+
+#map{
+  width: 30vw;
+  min-height:12vw;
+  padding: 1em;
+}
+
+.map-container{
+  border-top: 1px solid black;
+  font-weight: bold;
+  color:black;
+}
+
+footer img{
+  margin-top: 10px;
+  padding-top: 20px;
+  width:75px;
+  height:75px;
+}
+
+#fixed {
+  display: inline-flex;
+  position: fixed;
+}
+
+footer p{
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  font-size: 18pt;
+}
+
+footer{
+  min-height: 20vw;
+  border-top:#e8491d 3px solid; ;
+  color:#ffffffff;
+  background-color:#222222;
+  text-align: center;
+
+}
+
+.about {
+  list-style: none;
+  display: inline-block;
+  border: #cccccc solid 2px;
+  padding:20px;
+  margin: auto 50px 50px;
+  text-align: center;
+}
+
+
+
+/* 
+.app-title{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #293251;
+} */
+.home-container{
+ 
+ 
+  background-color: #fafafa;
+  font:.7em Arial, Helvetica;
+}
+
+.notification{
+  background-color: #f8d7da;
+  display: none;
+}
+
+.notification p{
+  color: #721c24;
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+  padding: .6250em 0;
+}
+
+.about-container{
+  min-width: 39vw;
+  padding: 1em;
+  font-weight: 600;
+  font-size:1.4em;
+}
+
+.weather-container{
+  min-width: 30vw;
+  padding: 1em;
+  background-image: url(../img/toggle2.png);
+  background-position-x: center;
+  
+  font:.7em Arial, Helvetica;
+}
+.weather-icon img{
+  display: block;
+  margin: 0 auto;
+}
+
+.temperature-value p{
+  padding: 0;
+  margin: 0;
+  color: #293251;
+  font-size: 5em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.temperature-value span{
+  color: #293251;
+  font-size: 0.6em;
+}
+.temperature-description p, .feels_like{
+  padding: .3em;
+  margin: 0;
+  color: #293251;
+  text-align: center;
+  font-size: 4.3em;
+}
+.location p{
+  margin: 0;
+  padding: 0;
+  color: #293251;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+#gifs-rows img {
+  cursor: pointer;
+}
+#gifs-rows .gif-file {
+  display:none;
+}
+
+.column {
+  width: 100%;
+  padding: 5px;
+  border: #cccccc solid 2px;
+  overflow-x: hidden;
+  
+}
+
+.grow{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin:0;
+  padding-bottom:20px;
+  overflow-x: hidden;
+}
+.grow > div{
+  flex-basis: auto;
+  flex-shrink: 0;
+  transition: .5s;
+}
+.grow > div:hover{
+  flex-basis: 35%;
+}
+
+/* .grow > div:first-child:hover{
+  margin-left: 15%;
+}
+.grow > div:last-child:hover{
+  margin-right: 15%;
+} */
+/*MEDIA*/
+@media(max-width:768px){
+  header nav,
+  header nav li{
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+  .temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+}
